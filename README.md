@@ -11,39 +11,42 @@ A web app to help volleyball coaches and players manage teams. This tool allows 
 
 ## Project Structure
 
-volleyball-team-management
-├── client
-│ ├── src
-│ │ ├── components
-│ │ │ ├── PlayerForm.js
-│ │ │ ├── TeamList.js
-│ │ │ ├── PlayerCard.js
-│ │ │ ├── GameSchedule.js
-│ │ │ └── RSVPButton.js
-│ │ ├── pages
-│ │ │ ├── TeamPage.js
-│ │ │ └── SchedulePage.js
-│ │ ├── App.js
-│ │ └── index.js
-│ ├── public
-│ └── package.json
-└── server
-├── controllers
-│ ├── playerController.js
-│ ├── teamController.js
-│ └── scheduleController.js
-├── models
-│ ├── User.js
-│ ├── Team.js
-│ ├── Player.js
-│ ├── Game.js
-│ └── RSVP.js
-├── routes
-│ ├── teamRoutes.js
-│ └── scheduleRoutes.js
-├── config
-│ └── database.js
-└── server.js
+- Folder structure:
+  ```bash
+  volleyball-team-management
+  ├── client
+  │ ├── src
+  │ │ ├── components
+  │ │ │ ├── PlayerForm.js
+  │ │ │ ├── TeamList.js
+  │ │ │ ├── PlayerCard.js
+  │ │ │ ├── GameSchedule.js
+  │ │ │ └── RSVPButton.js
+  │ │ ├── pages
+  │ │ │ ├── TeamPage.js
+  │ │ │ └── SchedulePage.js
+  │ │ ├── App.js
+  │ │ └── index.js
+  │ ├── public
+  │ └── package.json
+  └── server
+  ├── controllers
+  │ ├── playerController.js
+  │ ├── teamController.js
+  │ └── scheduleController.js
+  ├── models
+  │ ├── User.js
+  │ ├── Team.js
+  │ ├── Player.js
+  │ ├── Game.js
+  │ └── RSVP.js
+  ├── routes
+  │ ├── teamRoutes.js
+  │ └── scheduleRoutes.js
+  ├── config
+  │ └── database.js
+  └── server.js
+  ```
 
 ## React Components
 
@@ -79,10 +82,12 @@ Each `Team` has a `User` as the coach, each `Player` belongs to a `Team`, each `
 
 1. Clone the repository
 2. Install dependencies for the client and server:
-   ```bash
-   cd client && npm install
-   cd ../server && npm install
-   ```
+
+```bash
+cd client && npm install
+cd ../server && npm install
+```
+
 3. Configure database in server/config/database.js
 4. Start the development servers:
    ```bash
